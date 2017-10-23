@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/dot"
+            android:id="@+id/imgview_category"
+            android:layout_margin="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_category"
+            android:text="Danh mục"
+
+            android:textSize="18sp"
+            android:textColor="#3f10ea"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
+
+<!--
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+</ListView>
+-->

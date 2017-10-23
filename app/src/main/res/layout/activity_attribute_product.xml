@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.minhq.mq_shop.Activity.ActivityAttributeProduct">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_attributeproduct"
+        app:title="Thuộc tính sản phẩm"
+        app:titleTextColor="#ecdada"
+        android:background="#421ad2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/lv_attributeproduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

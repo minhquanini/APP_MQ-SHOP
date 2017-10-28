@@ -20,16 +20,16 @@
         "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\contact.png",
-        "source": "D:\\Android\\MQ-SHOP\\app\\src\\main\\res\\drawable\\contact.png"
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
         "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\contact.png",
+        "source": "D:\\Android\\MQ-SHOP\\app\\src\\main\\res\\drawable\\contact.png"
     },
     {
         "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
@@ -164,6 +164,10 @@
         "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_feedback.png",
+        "source": "D:\\Android\\MQ-SHOP\\app\\src\\main\\res\\drawable\\background_feedback.png"
+    },
+    {
         "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
@@ -176,12 +180,20 @@
         "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\boder.xml",
+        "source": "D:\\Android\\MQ-SHOP\\app\\src\\main\\res\\drawable\\boder.xml"
+    },
+    {
         "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
         "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tooltip_frame_light.xml",
         "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable\\tooltip_frame_light.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_map.png",
+        "source": "D:\\Android\\MQ-SHOP\\app\\src\\main\\res\\drawable\\icon_map.png"
     },
     {
         "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\feedback.png",

@@ -1,6 +1,9 @@
 package com.example.minhq.mq_shop.Activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -38,6 +41,10 @@ public class ActivityProductBrand extends AppCompatActivity {
     ArrayList<Product> arrProduct;
     int idbrd=0;
     int quantitypd=0;
+
+    int userid=0;
+    boolean checkuserid=false;
+    String checkmenuitem="Login";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +59,22 @@ public class ActivityProductBrand extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
         getMenuInflater().inflate(R.menu.menu,menu);
-        return super.onCreateOptionsMenu(menu);
+        SharedPreferences sharedPreferences=getSharedPreferences(ActivityLogin.SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
+        userid=sharedPreferences.getInt("userid",0);
+        if(userid!=0){
+            checkuserid=true;
+        }
+        if(checkuserid==true){
+            menu.findItem(R.id.menu_login).setTitle("Log out");
+            checkmenuitem="Log out";
+        }
+        else
+        {
+            menu.findItem(R.id.menu_login).setTitle("Login");
+            //checkmenuitem="Log out";
+        }
+        return true;
+        //return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -64,8 +86,30 @@ public class ActivityProductBrand extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.menu_login:
-                Intent intent1=new Intent(ActivityProductBrand.this,ActivityLogin.class);
-                startActivity(intent1);
+                if(checkmenuitem=="Log out"){
+                    SharedPreferences sharedPreferences=getSharedPreferences(ActivityLogin.SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.remove("userid");
+                    //editor.clear();
+                    editor.commit();
+                    checkuserid=false;
+                    invalidateOptionsMenu();
+                    checkmenuitem="Login";
+                    //Toast.makeText(this, userid+"", Toast.LENGTH_SHORT).show();
+                    Intent intent2=new Intent(ActivityProductBrand.this,MainActivity.class);
+                    startActivity(intent2);
+                    MainActivity.arrOrderDetail.clear();
+                    Toast.makeText(this, "Đã đăng xuất", Toast.LENGTH_SHORT).show();
+
+                }
+                else
+                {
+                    SharedPreferences sharedPreferences=getSharedPreferences(ActivityLogin.SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
+                    userid=sharedPreferences.getInt("userid",0);
+                    Toast.makeText(this, userid+"", Toast.LENGTH_SHORT).show();
+                    Intent intent1=new Intent(ActivityProductBrand.this,ActivityLogin.class);
+                    startActivity(intent1);
+                }
 
         }
         return true;
@@ -87,7 +131,7 @@ public class ActivityProductBrand extends AppCompatActivity {
                                     int pdID=jsonObject.getInt("productID");
                                     String pdname=jsonObject.getString("nameproduct");
                                     String pdimage=jsonObject.getString("imageproduct");
-                                    String anhproduct="http://10.1.18.114:8080/MQ-SHOP/"+pdimage;
+                                    String anhproduct="http://192.168.1.7:8080/MQ-SHOP/"+pdimage;
                                     Double pdprice=jsonObject.getDouble("price");
                                     Double pdproprice=jsonObject.getDouble("promotionprice");
                                     quantitypd=jsonObject.getInt("quantity");
@@ -148,5 +192,27 @@ public class ActivityProductBrand extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
     }
 }

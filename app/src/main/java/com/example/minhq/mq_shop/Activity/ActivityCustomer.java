@@ -1,8 +1,12 @@
 package com.example.minhq.mq_shop.Activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -33,21 +37,26 @@ public class ActivityCustomer extends AppCompatActivity {
     EditText editTextname,editTextemail,editTextphone,editTextaddress;
     RadioButton radioButtonpaydirect, radioButtonpayonline;
     Button buttonAccept, buttonCancel;
+    Toolbar toolbarCustomer;
     String namecustomer="";
     String emailcustomer="";
     String phonecustomer="";
     String addresscustomer="";
     String paymentmethod="";
+
+    int userid=0;
     //Date currentTime = Calendar.getInstance().getTime();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer);
         AnhXa();
-        EventButton();
-    }
+        ActionToolBar();
+       // EventButton();
 
-    private void EventButton() {
+        SharedPreferences sharedPreferences=getSharedPreferences(ActivityLogin.SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
+        userid=sharedPreferences.getInt("userid",0);
+
         buttonCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,6 +65,202 @@ public class ActivityCustomer extends AppCompatActivity {
             }
         });
 
+        buttonAccept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                namecustomer=editTextname.getText().toString();
+                emailcustomer=editTextemail.getText().toString();
+                phonecustomer=editTextphone.getText().toString();
+                addresscustomer=editTextaddress.getText().toString();
+                if(namecustomer.equals("")&&emailcustomer.equals("")&&phonecustomer.equals("")&&addresscustomer.equals("")){
+                    Toast.makeText(ActivityCustomer.this, "Bạn chưa nhập đủ thông tin", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    if(radioButtonpaydirect.isChecked()==true) {
+                        paymentmethod=radioButtonpaydirect.getText().toString();
+                        RequestQueue requestQueue = Volley.newRequestQueue(ActivityCustomer.this);
+                        StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.pathpostcustomer,
+                                new Response.Listener<String>() {
+                                    @Override
+                                    public void onResponse(final String orderID) {
+                                        //Trả về orderID
+                                        Log.d("orderID",orderID);
+                                        if(Integer.parseInt(orderID)>0){
+                                            RequestQueue queue=Volley.newRequestQueue(ActivityCustomer.this);
+                                            StringRequest request=new StringRequest(Request.Method.POST, Server.pathpostorderdetail,
+                                                    new Response.Listener<String>() {
+                                                        @Override
+                                                        public void onResponse(String response) {
+                                                            if(response.equals("1")){
+                                                                MainActivity.arrOrderDetail.clear();
+                                                                Toast.makeText(ActivityCustomer.this, "Bạn đặt hàng thành công", Toast.LENGTH_SHORT).show();
+                                                                Intent intent=new Intent(ActivityCustomer.this,MainActivity.class);
+                                                                startActivity(intent);
+                                                                Toast.makeText(ActivityCustomer.this, "Mời bạn tiếp tục mua hàng", Toast.LENGTH_SHORT).show();
+                                                            }
+                                                            else
+                                                            {
+                                                                Toast.makeText(ActivityCustomer.this, "Không thể thực hiện đặt hàng", Toast.LENGTH_SHORT).show();
+                                                            }
+                                                        }
+                                                    },
+                                                    new Response.ErrorListener() {
+                                                        @Override
+                                                        public void onErrorResponse(VolleyError error) {
+                                                            Toast.makeText(ActivityCustomer.this, "Lỗi", Toast.LENGTH_SHORT).show();
+                                                        }
+                                                    }){
+                                                @Override
+                                                protected Map<String, String> getParams() throws AuthFailureError {
+                                                    JSONArray jsonArray=new JSONArray();
+                                                    for(int i=0;i<MainActivity.arrOrderDetail.size();i++){
+                                                        JSONObject jsonObject=new JSONObject();
+                                                        try {
+                                                            jsonObject.put("orderID",orderID);
+                                                            jsonObject.put("productID",MainActivity.arrOrderDetail.get(i).getIdpd());
+                                                            jsonObject.put("quantity",MainActivity.arrOrderDetail.get(i).getQuantitypd());
+                                                            jsonObject.put("price",MainActivity.arrOrderDetail.get(i).getPricepd());
+                                                        } catch (JSONException e) {
+                                                            e.printStackTrace();
+                                                        }
+                                                        jsonArray.put(jsonObject);
+                                                    }
+                                                    HashMap<String,String> hashMap=new HashMap<String, String>();
+                                                    hashMap.put("orderdetail",jsonArray.toString());
+                                                    return hashMap;
+                                                }
+                                            };
+                                            queue.add(request);
+                                        }
+                                    }
+                                },
+                                new Response.ErrorListener() {
+                                    @Override
+                                    public void onErrorResponse(VolleyError error) {
+
+                                    }
+                                }){
+                            @Override
+                            protected Map<String, String> getParams() throws AuthFailureError {
+                                HashMap<String,String> param=new HashMap<String, String>();
+                                param.put("customername",namecustomer);
+                                param.put("customeremail",emailcustomer);
+                                param.put("customerphone",phonecustomer);
+                                param.put("customeraddress",addresscustomer);
+                                //param.put("createddate",currentTime+"");
+                                param.put("total",ActivityCart.EventUtils()+"");
+                                param.put("paymentmethod",paymentmethod);
+                                param.put("userID",userid+"");
+                                //Làm thêm về user
+                                //param.put("userID","4");
+                                return param;
+                            }
+                        };
+                        requestQueue.add(stringRequest);
+                    }
+                    else if(radioButtonpayonline.isChecked()==true)
+                    {
+                        paymentmethod=radioButtonpayonline.getText().toString();
+                        RequestQueue requestQueue = Volley.newRequestQueue(ActivityCustomer.this);
+                        StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.pathpostcustomer,
+                                new Response.Listener<String>() {
+                                    @Override
+                                    public void onResponse(final String orderid) {
+                                        //Trả về orderID
+                                        Log.d("orderID",orderid);
+                                        if(Integer.parseInt(orderid)>0){
+                                            RequestQueue queue1=Volley.newRequestQueue(ActivityCustomer.this);
+                                            StringRequest request1=new StringRequest(Request.Method.POST, Server.pathpostorderdetail,
+                                                    new Response.Listener<String>() {
+                                                        @Override
+                                                        public void onResponse(String response) {
+                                                            if(response.equals("1")){
+                                                                //MainActivity.arrOrderDetail.clear();
+                                                                Toast.makeText(ActivityCustomer.this, "Bạn đặt hàng thành công", Toast.LENGTH_SHORT).show();
+                                                                Intent intent=new Intent(ActivityCustomer.this,ActivityPayOnline.class);
+                                                                startActivity(intent);
+                                                                Toast.makeText(ActivityCustomer.this, "Nhập thông tin thanh toán", Toast.LENGTH_SHORT).show();
+                                                            }
+                                                            else
+                                                            {
+                                                                Toast.makeText(ActivityCustomer.this, "Không thể thực hiện đặt hàng", Toast.LENGTH_SHORT).show();
+                                                            }
+                                                        }
+                                                    },
+                                                    new Response.ErrorListener() {
+                                                        @Override
+                                                        public void onErrorResponse(VolleyError error) {
+                                                            Toast.makeText(ActivityCustomer.this, "Lỗi", Toast.LENGTH_SHORT).show();
+                                                        }
+                                                    }){
+                                                @Override
+                                                protected Map<String, String> getParams() throws AuthFailureError {
+                                                    JSONArray jsonArray=new JSONArray();
+                                                    for(int i=0;i<MainActivity.arrOrderDetail.size();i++){
+                                                        JSONObject jsonObject=new JSONObject();
+                                                        try {
+                                                            jsonObject.put("orderID",orderid);
+                                                            jsonObject.put("productID",MainActivity.arrOrderDetail.get(i).getIdpd());
+                                                            jsonObject.put("quantity",MainActivity.arrOrderDetail.get(i).getQuantitypd());
+                                                            jsonObject.put("price",MainActivity.arrOrderDetail.get(i).getPricepd());
+                                                        } catch (JSONException e) {
+                                                            e.printStackTrace();
+                                                        }
+                                                        jsonArray.put(jsonObject);
+                                                    }
+                                                    HashMap<String,String> hashMap=new HashMap<String, String>();
+                                                    hashMap.put("orderdetail",jsonArray.toString());
+                                                    return hashMap;
+                                                }
+                                            };
+                                            queue1.add(request1);
+                                        }
+                                    }
+                                },
+                                new Response.ErrorListener() {
+                                    @Override
+                                    public void onErrorResponse(VolleyError error) {
+
+                                    }
+                                }){
+                            @Override
+                            protected Map<String, String> getParams() throws AuthFailureError {
+                                HashMap<String,String> param=new HashMap<String, String>();
+                                param.put("customername",namecustomer);
+                                param.put("customeremail",emailcustomer);
+                                param.put("customerphone",phonecustomer);
+                                param.put("customeraddress",addresscustomer);
+                                //param.put("createddate",currentTime+"");
+                                param.put("total",ActivityCart.EventUtils()+"");
+                                param.put("paymentmethod",paymentmethod);
+                                //param.put("orderstatus","Chưa duyệt");
+                                //Làm thêm về user
+                                param.put("userID",userid+"");
+                                return param;
+                            }
+                        };
+                        requestQueue.add(stringRequest);
+                    }
+                }
+
+            }
+        });
+
+    }
+
+    private void ActionToolBar() {
+        setSupportActionBar(toolbarCustomer);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbarCustomer.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+    }
+/*
+    private void EventButton() {
         buttonAccept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -152,17 +357,6 @@ public class ActivityCustomer extends AppCompatActivity {
                     }
                     else if(radioButtonpayonline.isChecked()==true)
                     {
-                        /*
-                        Intent intent=new Intent(ActivityCustomer.this,ActivityPayOnline.class);
-                        Bundle bundle=new Bundle();
-                        bundle.putString("name",namecustomer);
-                        bundle.putString("email",emailcustomer);
-                        bundle.putString("phone",phonecustomer);
-                        bundle.putString("address",addresscustomer);
-                        bundle.putString("payonline",radioButtonpayonline.getText().toString());
-                        intent.putExtra("BUNDLE",bundle);
-                        startActivity(intent);
-                        */
                         paymentmethod=radioButtonpayonline.getText().toString();
                         RequestQueue requestQueue = Volley.newRequestQueue(ActivityCustomer.this);
                         StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.pathpostcustomer,
@@ -249,7 +443,7 @@ public class ActivityCustomer extends AppCompatActivity {
             }
         });
     }
-
+*/
     private void AnhXa() {
         editTextname= findViewById(R.id.edt_namecustomer);
         editTextemail= findViewById(R.id.edt_emailcustomer);
@@ -258,7 +452,30 @@ public class ActivityCustomer extends AppCompatActivity {
         radioButtonpaydirect= findViewById(R.id.rdb_directly);
         radioButtonpayonline= findViewById(R.id.rdb_online);
         buttonAccept= findViewById(R.id.btn_accept);
+        //buttonAccept.setFocusableInTouchMode(true);
         buttonCancel= findViewById(R.id.btn_cancel);
+        toolbarCustomer=findViewById(R.id.toolbar_infocustomer);
 
+    }
+
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            //return;
+        } else {
+            this.doubleBackToExitPressedOnce = true;
+            Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+            new Handler().postDelayed(new Runnable() {
+
+                @Override
+                public void run() {
+                    doubleBackToExitPressedOnce = false;
+                }
+            }, 500);
+        }
     }
 }

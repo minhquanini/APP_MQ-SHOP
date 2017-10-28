@@ -152,6 +152,10 @@
         "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_feedback.xml",
+        "source": "D:\\Android\\MQ-SHOP\\app\\src\\main\\res\\layout\\activity_feedback.xml"
+    },
+    {
         "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shipping_method_view.xml",
         "source": "C:\\Users\\minhq\\.android\\build-cache\\5797f0c070cebb43e6ab0a7eb579fc036f844d67\\output\\res\\layout\\shipping_method_view.xml"
     },
@@ -290,10 +294,6 @@
     {
         "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
-        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
-        "source": "D:\\Android\\MQ-SHOP\\app\\src\\main\\res\\layout\\login.xml"
     },
     {
         "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",

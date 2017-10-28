@@ -5,7 +5,7 @@ package com.example.minhq.mq_shop.Utils;
  */
 
 public class Server {
-    public static String localhost="10.1.18.114";
+    public static String localhost="192.168.1.7";
     public static String pathcat="http://" + localhost + ":8080/MQ-SHOP/ws/webservice/category";
     public static String pathbrd="http://" + localhost + ":8080/MQ-SHOP/ws/webservice/brand";
     public static String pathpdnew="http://" + localhost + ":8080/MQ-SHOP/ws/webservice/productnew";
@@ -15,4 +15,6 @@ public class Server {
     public static String pathpostcustomer="http://" + localhost + ":8080/MQ-SHOP/ws/webservice/order";
     public static String pathpostorderdetail="http://" + localhost + ":8080/MQ-SHOP/ws/webservice/orderdetail";
     public static String pathposttoken="http://" + localhost + ":8080/MQ-SHOP/ws/webservice/token";
+    public static String pathpostfeedback="http://" + localhost + ":8080/MQ-SHOP/ws/webservice/feedback";
+    public static String pathlogin="http://" + localhost + ":8080/MQ-SHOP/ws/webservice/login";
 }

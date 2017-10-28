@@ -2,6 +2,7 @@ package com.example.minhq.mq_shop.Activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,7 +42,8 @@ public class ActivityPayOnline extends AppCompatActivity {
     Button submit;
     //CardInputWidget mCardInputWidget;
     Double money=0.0;
-    EditText cardnumber, month,year,cvc;
+    EditText Cardnumber, Month,Year,CVC;
+    Card card;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,25 +52,26 @@ public class ActivityPayOnline extends AppCompatActivity {
         //mCardInputWidget = (CardInputWidget) findViewById(R.id.card_input_widget);
         //buttoncancelpayonline=(Button) findViewById(R.id.btn_cancelpayonline);
         //buttoncompletepayonline=(Button) findViewById(R.id.btn_completepayonline);
-        cardnumber=findViewById(R.id.cardNumber);
-        month=findViewById(R.id.month);
-        year=findViewById(R.id.year);
-        cvc=findViewById(R.id.cvc);
+        Cardnumber= findViewById(R.id.cardNumber);
+        Month=findViewById(R.id.month);
+        Year=findViewById(R.id.year);
+        CVC=findViewById(R.id.cvc);
         money=ActivityCart.EventUtils()/22680.0;
         Double d = new Double(money);
         i = d.intValue();
 
 
-        final Card card=new Card(cardnumber.getText().toString(),
-                Integer.parseInt(month.getText().toString()),
-                Integer.parseInt(year.getText().toString()),
-                cvc.getText().toString());
+
 
         submit= findViewById(R.id.submitButton);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Stripe stripe=new Stripe(ActivityPayOnline.this,"pk_test_zweiNdynhBQNk96SuMNZCq9P");
+                card=new Card(Cardnumber.getText().toString(),
+                        Integer.parseInt(Month.getText().toString()),
+                        Integer.parseInt(Year.getText().toString()),
+                        CVC.getText().toString());
                 stripe.createToken(card,
                         new TokenCallback() {
                             @Override
@@ -179,6 +182,27 @@ public class ActivityPayOnline extends AppCompatActivity {
         });
         */
 
+    }
+
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
     }
 
     private void GetData() {

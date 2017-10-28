@@ -1,7 +1,10 @@
 package com.example.minhq.mq_shop.Activity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -72,7 +75,12 @@ public class MainActivity extends AppCompatActivity {
     int idbrand=0;
     String namebrd;
     String imgbrd="";
-   // public static int a=0;
+
+
+    int userid=0;
+    boolean checkuserid=false;
+    String checkmenuitem="Login";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,12 +93,26 @@ public class MainActivity extends AppCompatActivity {
         GetDataProduct();
 
 
-
     }
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
         getMenuInflater().inflate(R.menu.menu,menu);
-        return super.onCreateOptionsMenu(menu);
+        SharedPreferences sharedPreferences=getSharedPreferences(ActivityLogin.SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
+        userid=sharedPreferences.getInt("userid",0);
+        if(userid!=0){
+            checkuserid=true;
+        }
+        if(checkuserid==true){
+            menu.findItem(R.id.menu_login).setTitle("Log out");
+            checkmenuitem="Log out";
+        }
+        else
+        {
+            menu.findItem(R.id.menu_login).setTitle("Login");
+            //checkmenuitem="Log out";
+        }
+        return true;
+        //return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -102,8 +124,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.menu_login:
-                Intent intent1=new Intent(MainActivity.this,ActivityLogin.class);
-                startActivity(intent1);
+                if(checkmenuitem=="Log out"){
+                    SharedPreferences sharedPreferences=getSharedPreferences(ActivityLogin.SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.remove("userid");
+                    //editor.clear();
+                    editor.commit();
+                    checkuserid=false;
+                    invalidateOptionsMenu();
+                    checkmenuitem="Login";
+                    MainActivity.arrOrderDetail.clear();
+                    //Toast.makeText(this, userid+"", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Đã đăng xuất", Toast.LENGTH_SHORT).show();
+
+                }
+                else
+                {
+                    SharedPreferences sharedPreferences=getSharedPreferences(ActivityLogin.SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE);
+                    userid=sharedPreferences.getInt("userid",0);
+                    Toast.makeText(this, userid+"", Toast.LENGTH_SHORT).show();
+                    Intent intent1=new Intent(MainActivity.this,ActivityLogin.class);
+                    startActivity(intent1);
+                }
+
 
         }
         return true;
@@ -159,7 +202,8 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(MainActivity.this,"Đang chọn vị trí thứ "+ position, Toast.LENGTH_SHORT).show();
                 switch (position){
                     case 0:
-                        Toast.makeText(MainActivity.this, "Bạn trở về trang chủ", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, "Bạn trở về trang chủ", Toast.LENGTH_SHORT).show();
+                        drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case 1:
                         //Toast.makeText(MainActivity.this, "Bạn chọn danh mục", Toast.LENGTH_SHORT).show();
@@ -172,12 +216,14 @@ public class MainActivity extends AppCompatActivity {
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case 3:
-                        Toast.makeText(MainActivity.this, "Bạn muốn liên hệ", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, "Bạn muốn liên hệ", Toast.LENGTH_SHORT).show();
                         Intent intent_contact=new Intent(MainActivity.this,ActivityContact.class);
                         startActivity(intent_contact);
                         break;
                     case 4:
-                        Toast.makeText(MainActivity.this, "Bạn phản hồi", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, "Bạn phản hồi", Toast.LENGTH_SHORT).show();
+                        Intent intent=new Intent(MainActivity.this,ActivityFeedback.class);
+                        startActivity(intent);
                         break;
                 }
             }
@@ -305,7 +351,7 @@ public class MainActivity extends AppCompatActivity {
                                     idbrand=jsonObject.getInt("brandID");
                                     namebrd=jsonObject.getString("namebrand");
                                     imgbrd=jsonObject.getString("image");
-                                    String anh="http://10.1.18.114:8080/MQ-SHOP/"+imgbrd;
+                                    String anh="http://192.168.1.7:8080/MQ-SHOP/"+imgbrd;
                                     arrBrand.add(new Brand(idbrand,namebrd,anh));
                                     //arrCategory.add(namecat);
                                     adapterbrand.notifyDataSetChanged();
@@ -342,7 +388,7 @@ public class MainActivity extends AppCompatActivity {
                                     Double propricepd=jsonObject.getDouble("promotionprice");
                                     int quantitypd=jsonObject.getInt("quantity");
                                     String imgpd=jsonObject.getString("imageproduct");
-                                    String loadimage="http://10.1.18.114:8080/MQ-SHOP/"+imgpd;
+                                    String loadimage="http://192.168.1.7:8080/MQ-SHOP/"+imgpd;
                                     String descriptpd=jsonObject.getString("descriptionproduct");
                                     String contpd=jsonObject.getString("contentproduct");
                                     arrProduct.add(new Product(idpdnew,namepd,loadimage,pricepd,propricepd,quantitypd,descriptpd,contpd));
@@ -362,5 +408,27 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
         requestQueue.add(jsonArrayRequest);
+    }
+
+
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
     }
 }

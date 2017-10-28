@@ -82,8 +82,8 @@ public class AdapterCart extends BaseAdapter {
         int soluong= Integer.parseInt(viewHolder.buttonvalue.getText().toString());
 
 
-        //if(soluong>= ){  //sai dòng này!!!!!!!!!!!!!!!!!!!!!!!!
-        if(soluong> 10){
+        if(soluong>= MainActivity.arrOrderDetail.get(position).quantitymax){  //sai dòng này!!!!!!!!!!!!!!!!!!!!!!!!
+        //if(soluong> 10){
 
 
             viewHolder.buttonplus.setVisibility(View.INVISIBLE);
@@ -113,7 +113,7 @@ public class AdapterCart extends BaseAdapter {
                 viewHolder.txtpricepdcart.setText("Giá: "+decimalFormat.format(giamoinhat)+" Đ");
                 ActivityCart.EventUtils();
                 //viewHolder.buttonvalue.setText(String.valueOf(quantitynew));
-                if(quantitynew>10-1){
+                if(quantitynew>MainActivity.arrOrderDetail.get(position).quantitymax-1){
                     viewHolder.buttonplus.setVisibility(View.INVISIBLE);
                     viewHolder.buttonminus.setVisibility(View.VISIBLE);
                     viewHolder.buttonvalue.setText(String.valueOf(quantitynew));

@@ -10,13 +10,15 @@ public class OrderDetail {
     public Double pricepd;
     public String imagepd;
     public int quantitypd;
+    public int quantitymax;
 
-    public OrderDetail(int idpd, String namepd, Double pricepd, String imagepd, int quantitypd) {
+    public OrderDetail(int idpd, String namepd, Double pricepd, String imagepd, int quantitypd, int quantitymax) {
         this.idpd = idpd;
         this.namepd = namepd;
         this.pricepd = pricepd;
         this.imagepd = imagepd;
         this.quantitypd = quantitypd;
+        this.quantitymax=quantitymax;
     }
 
     public int getIdpd() {
@@ -57,5 +59,13 @@ public class OrderDetail {
 
     public void setQuantitypd(int quantitypd) {
         this.quantitypd = quantitypd;
+    }
+
+    public int getQuantitymax() {
+        return quantitymax;
+    }
+
+    public void setQuantitymax(int quantitymax) {
+        this.quantitymax = quantitymax;
     }
 }

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\7c41bc54081c724f6dbe5b377b401a29f6d03468\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\7c41bc54081c724f6dbe5b377b401a29f6d03468\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\7c41bc54081c724f6dbe5b377b401a29f6d03468\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\7c41bc54081c724f6dbe5b377b401a29f6d03468\\output\\res\\layout-v21\\notification_action.xml"
+    }
+]

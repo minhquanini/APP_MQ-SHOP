@@ -1,0 +1,214 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:2:1-40:12
+	package
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\minhq\.android\build-cache\e6937280c990bd7818942f0d49f4a3966878e74c\output\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:8:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:9:5-71
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:9:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:10:5-72
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:10:22-69
+application
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:12:5-38:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\minhq\.android\build-cache\497bddfc2aea059aea4de29eb8c1004e3a4abf8b\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\minhq\.android\build-cache\83a57c2151bafa6cd56a27954e91cf495b037b8c\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:26.0.1] C:\Users\minhq\.android\build-cache\18ca1c0604c71d1a0019af82e638ffc097394e87\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\minhq\.android\build-cache\e6937280c990bd7818942f0d49f4a3966878e74c\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\minhq\.android\build-cache\9810200b9e883a293d7834982265c47217e2a4b0\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\minhq\.android\build-cache\fb65a7f9a22ffdb595b09130a3a8107fab3db79b\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\minhq\.android\build-cache\1a4171c878300a47629c7debfc729281a8f88b96\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:11:5-25:19
+MERGED from [com.android.support:design:26.0.1] C:\Users\minhq\.android\build-cache\fec69220c9854c400159aa0e61ae067e4c27745d\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\minhq\.android\build-cache\a0cfa1342bb263af263cce391429c128d341b4a4\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\minhq\.android\build-cache\7e5e4c7158f32b7207d52667d073e3cf7cd7faa6\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\minhq\.android\build-cache\d16af15db95ea0659cf897009722d9f0b6fe1ecf\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.0.1] C:\Users\minhq\.android\build-cache\ef82546f17fb2b8ca25170da5e7d34c37985d8f2\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.0.1] C:\Users\minhq\.android\build-cache\4a43e2a903886a32f41a837a0f9463cf341cd379\output\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\minhq\.android\build-cache\a4951b6328a93da9b536eaa08a61e2bf001159ab\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\minhq\.android\build-cache\da9a3afd48516ef6a430071f5e5787317d110def\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\minhq\.android\build-cache\77523a535c7632c0181543f8672f2c26f80d7896\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\minhq\.android\build-cache\6be72c4465b973419dd2f40f4ef46f50f26e863f\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\minhq\.android\build-cache\e506dce4819fb6e5374e32bf246a088dee4652d4\output\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\minhq\.android\build-cache\7c41bc54081c724f6dbe5b377b401a29f6d03468\output\AndroidManifest.xml:25:5-29:19
+	android:label
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:15:9-41
+	android:supportsRtl
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:17:9-35
+	android:roundIcon
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:16:9-54
+	android:allowBackup
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:13:9-35
+	android:icon
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:14:9-43
+	android:theme
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:18:9-40
+activity#com.example.minhq.mq_shop.Activity.MainActivity
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:19:9-25:20
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:19:19-56
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:23:27-74
+activity#com.example.minhq.mq_shop.Activity.ActivityContact
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:26:9-62
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:26:19-59
+activity#com.example.minhq.mq_shop.Activity.ActivityProductCategory
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:27:9-70
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:27:19-67
+activity#com.example.minhq.mq_shop.Activity.ActivityProductBrand
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:28:9-67
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:28:19-64
+activity#com.example.minhq.mq_shop.Activity.ActivityProductDetails
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:29:9-69
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:29:19-66
+activity#com.example.minhq.mq_shop.Activity.ActivityAttributeProduct
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:30:9-71
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:30:19-68
+activity#com.example.minhq.mq_shop.Activity.ActivityCart
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:31:9-59
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:31:19-56
+activity#com.example.minhq.mq_shop.LoginActivity
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:32:9-34:60
+	android:label
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:34:13-57
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:33:13-42
+activity#com.example.minhq.mq_shop.Activity.ActivityLogin
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:35:9-60
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:35:19-57
+activity#com.example.minhq.mq_shop.Activity.ActivityCustomer
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:36:9-63
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:36:19-60
+activity#com.example.minhq.mq_shop.Activity.ActivityPayOnline
+ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:37:9-73
+	android:name
+		ADDED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml:37:19-61
+uses-sdk
+INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\minhq\.android\build-cache\497bddfc2aea059aea4de29eb8c1004e3a4abf8b\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\minhq\.android\build-cache\83a57c2151bafa6cd56a27954e91cf495b037b8c\output\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:cardview-v7:26.0.1] C:\Users\minhq\.android\build-cache\18ca1c0604c71d1a0019af82e638ffc097394e87\output\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\minhq\.android\build-cache\e6937280c990bd7818942f0d49f4a3966878e74c\output\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\minhq\.android\build-cache\9810200b9e883a293d7834982265c47217e2a4b0\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\minhq\.android\build-cache\fb65a7f9a22ffdb595b09130a3a8107fab3db79b\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\minhq\.android\build-cache\1a4171c878300a47629c7debfc729281a8f88b96\output\AndroidManifest.xml:17:5-42
+MERGED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:26.0.1] C:\Users\minhq\.android\build-cache\fec69220c9854c400159aa0e61ae067e4c27745d\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\minhq\.android\build-cache\a0cfa1342bb263af263cce391429c128d341b4a4\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\minhq\.android\build-cache\7e5e4c7158f32b7207d52667d073e3cf7cd7faa6\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\minhq\.android\build-cache\d16af15db95ea0659cf897009722d9f0b6fe1ecf\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.1] C:\Users\minhq\.android\build-cache\ef82546f17fb2b8ca25170da5e7d34c37985d8f2\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.1] C:\Users\minhq\.android\build-cache\4a43e2a903886a32f41a837a0f9463cf341cd379\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\minhq\.android\build-cache\a4951b6328a93da9b536eaa08a61e2bf001159ab\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\minhq\.android\build-cache\da9a3afd48516ef6a430071f5e5787317d110def\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\minhq\.android\build-cache\77523a535c7632c0181543f8672f2c26f80d7896\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\minhq\.android\build-cache\6be72c4465b973419dd2f40f4ef46f50f26e863f\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\minhq\.android\build-cache\e506dce4819fb6e5374e32bf246a088dee4652d4\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\minhq\.android\build-cache\7c41bc54081c724f6dbe5b377b401a29f6d03468\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.1] C:\Users\minhq\.android\build-cache\fec69220c9854c400159aa0e61ae067e4c27745d\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\MQ-SHOP\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:26.0.1] C:\Users\minhq\.android\build-cache\18ca1c0604c71d1a0019af82e638ffc097394e87\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:design:26.0.1] C:\Users\minhq\.android\build-cache\fec69220c9854c400159aa0e61ae067e4c27745d\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.0.1] C:\Users\minhq\.android\build-cache\a0cfa1342bb263af263cce391429c128d341b4a4\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] C:\Users\minhq\.android\build-cache\7e5e4c7158f32b7207d52667d073e3cf7cd7faa6\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.1] C:\Users\minhq\.android\build-cache\d16af15db95ea0659cf897009722d9f0b6fe1ecf\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.0.1] C:\Users\minhq\.android\build-cache\ef82546f17fb2b8ca25170da5e7d34c37985d8f2\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.0.1] C:\Users\minhq\.android\build-cache\4a43e2a903886a32f41a837a0f9463cf341cd379\output\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.0.1] C:\Users\minhq\.android\build-cache\a4951b6328a93da9b536eaa08a61e2bf001159ab\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.1] C:\Users\minhq\.android\build-cache\da9a3afd48516ef6a430071f5e5787317d110def\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.1] C:\Users\minhq\.android\build-cache\77523a535c7632c0181543f8672f2c26f80d7896\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.1] C:\Users\minhq\.android\build-cache\6be72c4465b973419dd2f40f4ef46f50f26e863f\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.1] C:\Users\minhq\.android\build-cache\e506dce4819fb6e5374e32bf246a088dee4652d4\output\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.1] C:\Users\minhq\.android\build-cache\7c41bc54081c724f6dbe5b377b401a29f6d03468\output\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:cardview-v7:26.0.1] C:\Users\minhq\.android\build-cache\18ca1c0604c71d1a0019af82e638ffc097394e87\output\AndroidManifest.xml:25:13-35
+	android:name
+		ADDED from [com.android.support:cardview-v7:26.0.1] C:\Users\minhq\.android\build-cache\18ca1c0604c71d1a0019af82e638ffc097394e87\output\AndroidManifest.xml:24:13-51
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\minhq\.android\build-cache\e6937280c990bd7818942f0d49f4a3966878e74c\output\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\minhq\.android\build-cache\e6937280c990bd7818942f0d49f4a3966878e74c\output\AndroidManifest.xml:19:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\minhq\.android\build-cache\e6937280c990bd7818942f0d49f4a3966878e74c\output\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\minhq\.android\build-cache\e6937280c990bd7818942f0d49f4a3966878e74c\output\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.0.1] C:\Users\minhq\.android\build-cache\e6937280c990bd7818942f0d49f4a3966878e74c\output\AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\minhq\.android\build-cache\9810200b9e883a293d7834982265c47217e2a4b0\output\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\minhq\.android\build-cache\9810200b9e883a293d7834982265c47217e2a4b0\output\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\minhq\.android\build-cache\9810200b9e883a293d7834982265c47217e2a4b0\output\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\minhq\.android\build-cache\9810200b9e883a293d7834982265c47217e2a4b0\output\AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\minhq\.android\build-cache\1a4171c878300a47629c7debfc729281a8f88b96\output\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\minhq\.android\build-cache\1a4171c878300a47629c7debfc729281a8f88b96\output\AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\minhq\.android\build-cache\1a4171c878300a47629c7debfc729281a8f88b96\output\AndroidManifest.xml:20:20-65
+activity#com.stripe.android.view.AddSourceActivity
+ADDED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:12:9-16:20
+	android:windowSoftInputMode
+		ADDED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:15:13-55
+	android:theme
+		ADDED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:14:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:13:13-69
+activity#com.stripe.android.view.PaymentMethodsActivity
+ADDED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:17:9-20:20
+	android:theme
+		ADDED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:19:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:18:13-74
+activity#com.stripe.android.view.PaymentFlowActivity
+ADDED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:21:9-24:20
+	android:theme
+		ADDED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:23:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:5.1.0] C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\AndroidManifest.xml:22:13-71

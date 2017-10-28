@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minhq.mq_shop.Activity.MainActivity">
+
+   <android.support.v4.widget.DrawerLayout
+       android:id="@+id/drawerlayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <android.support.v7.widget.Toolbar
+               android:id="@+id/toolbarHome"
+               android:background="#4d6ded"
+               app:title="Trang Chủ"
+               android:layout_width="match_parent"
+               android:layout_height="?attr/actionBarSize">
+           </android.support.v7.widget.Toolbar>
+           <ViewFlipper
+               android:id="@+id/viewlipper"
+               android:layout_width="match_parent"
+               android:layout_height="200dp">
+           </ViewFlipper>
+           <LinearLayout
+               android:background="#0ec2d6"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+                <TextView
+                    android:text="Sản phẩm mới"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#f00"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/recycleview"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+           </LinearLayout>
+       </LinearLayout>
+       <android.support.design.widget.NavigationView
+           android:id="@+id/navigationview"
+           android:layout_gravity="start"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <ListView
+               android:id="@+id/listviewHome"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></ListView>
+       </android.support.design.widget.NavigationView>
+   </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

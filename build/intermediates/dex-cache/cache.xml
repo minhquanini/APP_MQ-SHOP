@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\9810200b9e883a293d7834982265c47217e2a4b0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_94b30c241c7ff720632c126843fef2468c4000a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\a4951b6328a93da9b536eaa08a61e2bf001159ab\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_5fbe6d3124b633c24c6f41eed537017f2ff4a5d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\da9a3afd48516ef6a430071f5e5787317d110def\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a4590fa7eadce322ca893129fdc999074e1aa5bf">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_ba6f14acccc893c42b7c50e0a6e3a2253fb96ec0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\1a4171c878300a47629c7debfc729281a8f88b96\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_2f3b810865566cc33244012d8f26d1bcfb6a913e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\6be72c4465b973419dd2f40f4ef46f50f26e863f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="71af915b7f4f7ec0b5f768b365145bb6a5cb9a66">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_8e498ba50169f87b65013f134fa28d3eaacb1a2d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\7e5e4c7158f32b7207d52667d073e3cf7cd7faa6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e7424f816f538c2acfba6169b25e297ea22afbd8">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_1c566340f2241a3da8c90be82b4497c06ad181df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\e506dce4819fb6e5374e32bf246a088dee4652d4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d095503f29a8dedc55b9326ed97a5902a1527ab9">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_6525d8e4afba46e4da3f60a0dcd87fbaea3606f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\18ca1c0604c71d1a0019af82e638ffc097394e87\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="10c32fcf3d0acc4b208fc39f8d2e16b69ef8bd3b">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_1347633ccf1da045e3e8e380c70ef2f6aff0bf8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\a0cfa1342bb263af263cce391429c128d341b4a4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="681eeeaec5300e5257ad9bf889c3859ba3833d5a">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_44c53a59eaea546c2020b6b62c4b8bbe5f51739d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\fec69220c9854c400159aa0e61ae067e4c27745d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c390af22079a61fdc42712c19f15a700f1fc2cbf">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_30e588596ec95b573e2b8e856bfcd36657ee27ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\7c41bc54081c724f6dbe5b377b401a29f6d03468\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="22c673e65215e0764add61e3102946de895439e4">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_78e0ea0bc694642d18accccc3537477a4e765a22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\d16af15db95ea0659cf897009722d9f0b6fe1ecf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="083e7bc5a9d9404b49b8f34e5091532361fa28e6">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_ccc1e183fa0a26c62a5300616d319ff42e3c6044.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\5797f0c070cebb43e6ab0a7eb579fc036f844d67\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d08892e2809f74f96ad3c37762204b751f9da311">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_e8fec5dab92361789ccb7b2086d250bbc0597824.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\fb65a7f9a22ffdb595b09130a3a8107fab3db79b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_44a8c65f9c9e6bf268cca9c97665082620a8f25d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_fe9dd10dcb76b913dee7e8695451349231e0699e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\77523a535c7632c0181543f8672f2c26f80d7896\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dff4d8f88fe2c0e57306e6981fd9b90caeead7e3">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_10cd634af0721e21aa02a66550a2f05e4d1f020f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\e6937280c990bd7818942f0d49f4a3966878e74c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_1c95b6f6b25dc16b5485ce18db656436f380b773.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.0.1\e1bb32b12b25e2f78e6786059ca7ea878f8345e0\support-annotations-26.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1bb32b12b25e2f78e6786059ca7ea878f8345e0">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.1_4834aa1e688b4b85cda615c14dea46a4d456f27d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\4a43e2a903886a32f41a837a0f9463cf341cd379\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="56e96fa067ba358a6c60184e40947810dcd78f30">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_473903d3d21502cfc9484932dff62f9b8f12dea0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\minhq\.android\build-cache\ef82546f17fb2b8ca25170da5e7d34c37985d8f2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5b65ec1ebc84af3baecfd28954c9e7ff01b937a8">
+        <dex dex="D:\Android\MQ-SHOP\app\build\intermediates\pre-dexed\debug\classes_17d39526810c1cd38eb27ddfbf6d23944f699282.jar" />
+    </item>
+
+</items>

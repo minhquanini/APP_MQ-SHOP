@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_appbar_state_list_animator.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\ffc4b67e789ff9f62784194f86d417efdb78c4bc\\output\\res\\anim-v21\\design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\fec69220c9854c400159aa0e61ae067e4c27745d\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\fec69220c9854c400159aa0e61ae067e4c27745d\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    }
+]

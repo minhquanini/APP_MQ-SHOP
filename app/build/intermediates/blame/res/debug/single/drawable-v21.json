@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\fec69220c9854c400159aa0e61ae067e4c27745d\\output\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\7c41bc54081c724f6dbe5b377b401a29f6d03468\\output\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\fec69220c9854c400159aa0e61ae067e4c27745d\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\fec69220c9854c400159aa0e61ae067e4c27745d\\output\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\a0cfa1342bb263af263cce391429c128d341b4a4\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\Android\\MQ-SHOP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\minhq\\.android\\build-cache\\fec69220c9854c400159aa0e61ae067e4c27745d\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    }
+]

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.minhq.mq_shop.Activity.ActivityProductDetails">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_productdetail"
+        app:title="Chi tiết sản phẩm"
+        app:titleTextColor="#ecdada"
+        android:background="#421ad2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_productdetail"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"
+            android:layout_width="130dp"
+            android:layout_height="150dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_nameproductdetail"
+                android:textColor="#0b0b0b"
+                android:text="Tên sản phẩm"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_priceproductdetail"
+                android:textColor="#de162d"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="Giá sản phẩm"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:background="@drawable/spinner"
+                android:padding="12dp"
+                android:layout_margin="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:textAlignment="center">
+            </Spinner>
+            <Button
+                android:id="@+id/btn_addcart"
+                android:text="Thêm vào giỏ hàng"
+                android:textSize="13sp"
+                android:textColor="#480cd4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_linktoattribute"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:text="Xem thêm thuộc tính sản phẩm >"
+            android:textColor="#0509fc"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="Mô tả chi tiết sản phẩm"
+            android:textSize="20sp"
+            android:textColor="#7104f5"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_contentproduct"
+                android:textSize="15sp"
+                android:textColor="#080808"
+                android:layout_margin="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
